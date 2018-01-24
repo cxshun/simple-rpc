@@ -28,9 +28,8 @@ import java.util.Random;
 
 /**
  * <br/>==========================
- * UC国际业务部-> ucucion
  * RPC代理工厂类，使用java动态代理来实现
- * @author xiaoshun.cxs（xiaoshun.cxs@alibaba-inc.com）
+ * @author cxshun(cxshun@gmail.com)
  * @date 2017/11/27
  * <br/>==========================
  */

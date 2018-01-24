@@ -1,32 +1,24 @@
 package rpc.sdk.loadbalance;
 
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.annotation.PostConstruct;
-
-import org.apache.zookeeper.CreateMode;
-import org.apache.zookeeper.KeeperException;
-import org.apache.zookeeper.Version;
-import org.apache.zookeeper.WatchedEvent;
-import org.apache.zookeeper.Watcher;
+import org.apache.zookeeper.*;
 import org.apache.zookeeper.Watcher.Event.KeeperState;
-import org.apache.zookeeper.ZooDefs;
 import org.apache.zookeeper.ZooDefs.Ids;
-import org.apache.zookeeper.ZooKeeper;
 import org.apache.zookeeper.data.Stat;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import rpc.sdk.constants.GlobalConstant;
 import rpc.sdk.util.Logger;
 
+import javax.annotation.PostConstruct;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * <br/>==========================
- * UC国际业务部-> ucucion
  * 负载均衡处理器，由zookeeper来实现
- * @author xiaoshun.cxs（xiaoshun.cxs@alibaba-inc.com）
+ * @author cxshun(cxshun@gmail.com)
  * @date 2017/11/27
  * <br/>==========================
  */

@@ -9,10 +9,9 @@ import java.util.List;
 
 /**
  * <br/>==========================
- * UC国际业务部-> ucucion
  * 消息解码器，把客户端发过来的信息进行解码，转换为request对象
  *
- * @author xiaoshun.cxs（xiaoshun.cxs@alibaba-inc.com）
+ * @author cxshun(cxshun@gmail.com)
  * @date 2017/11/27
  * <br/>==========================
  */

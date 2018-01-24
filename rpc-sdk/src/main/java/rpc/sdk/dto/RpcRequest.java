@@ -4,9 +4,8 @@ import java.io.Serializable;
 
 /**
  * <br/>==========================
- * UC国际业务部-> ucucion
  * RPC请求对象
- * @author xiaoshun.cxs（xiaoshun.cxs@alibaba-inc.com）
+ * @author cxshun(cxshun@gmail.com)
  * @date 2017/11/27
  * <br/>==========================
  */

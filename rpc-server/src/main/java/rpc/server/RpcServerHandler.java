@@ -1,9 +1,5 @@
 package rpc.server;
 
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.util.stream.Stream;
-
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import rpc.sdk.dto.RpcRequest;
@@ -12,11 +8,13 @@ import rpc.sdk.dto.RpcResponse.ResponseCode;
 import rpc.sdk.util.Logger;
 import rpc.sdk.util.SpringUtil;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.stream.Stream;
+
 /**
  * <br/>==========================
- * UC国际业务部-> ucucion
- *
- * @author xiaoshun.cxs（xiaoshun.cxs@alibaba-inc.com）
+ * @author cxshun(cxshun@gmail.com)
  * @date 2017/11/27
  * <br/>==========================
  */

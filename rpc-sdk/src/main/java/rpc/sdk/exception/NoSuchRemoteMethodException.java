@@ -2,9 +2,8 @@ package rpc.sdk.exception;
 
 /**
  * <br/>==========================
- * UC国际业务部-> ucucion
  * 找不到指定的远程方法异常
- * @author xiaoshun.cxs（xiaoshun.cxs@alibaba-inc.com）
+ * @author cxshun(cxshun@gmail.com)
  * @date 2017/11/27
  * <br/>==========================
  */

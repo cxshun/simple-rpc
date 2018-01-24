@@ -1,13 +1,11 @@
 package rpc.sdk.util;
 
 import org.slf4j.LoggerFactory;
-import org.slf4j.helpers.BasicMarker;
 
 /**
  * <br/>==========================
- * UC国际业务部-> ucucion
  * 日志帮助类
- * @author xiaoshun.cxs（xiaoshun.cxs@alibaba-inc.com）
+ * @author cxshun(cxshun@gmail.com)
  * @date 2017/11/27
  * <br/>==========================
  */

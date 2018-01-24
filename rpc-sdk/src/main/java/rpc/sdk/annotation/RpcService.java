@@ -1,18 +1,12 @@
 package rpc.sdk.annotation;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Inherited;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-
 import org.springframework.stereotype.Component;
+
+import java.lang.annotation.*;
 
 /**
  * <br/>==========================
- * UC国际业务部-> ucucion
- *
- * @author xiaoshun.cxs（xiaoshun.cxs@alibaba-inc.com）
+ * @author cxshun(cxshun@gmail.com)
  * @date 2017/11/27
  * <br/>==========================
  */

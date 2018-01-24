@@ -20,10 +20,9 @@ import rpc.sdk.util.SpringUtil;
 
 /**
  * <br/>==========================
- * UC国际业务部-> ucucion
  * RPC服务
  *
- * @author xiaoshun.cxs（xiaoshun.cxs@alibaba-inc.com）
+ * @author cxshun(cxshun@gmail.com)
  * @date 2017/11/27
  * <br/>==========================
  */

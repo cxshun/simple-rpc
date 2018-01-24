@@ -6,9 +6,7 @@ import rpc.server.example.HelloRpc;
 
 /**
  * <br/>==========================
- * UC国际业务部-> ucucion
- *
- * @author xiaoshun.cxs（xiaoshun.cxs@alibaba-inc.com）
+ * @author cxshun(cxshun@gmail.com)
  * @date 2017/11/28
  * <br/>==========================
  */
