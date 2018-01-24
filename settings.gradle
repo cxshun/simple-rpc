@@ -1,0 +1,4 @@
+rootProject.name = 'simple-rpc'
+include 'rpc-server'
+include 'rpc-client'
+include 'rpc-sdk'

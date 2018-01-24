@@ -1,0 +1,26 @@
+group 'com.shun.rpc'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.springframework:spring-core:$springVersion"
+    compile "org.springframework:spring-context:$springVersion"
+    compile "org.springframework:spring-web:$springVersion"
+    compile "org.springframework:spring-webmvc:$springVersion"
+    compile("org.apache.zookeeper:zookeeper:$zkVersion") {
+        exclude group: 'io.netty', module: 'netty'
+    }
+    compile "io.netty:netty-all:$nettyVersion"
+    compile "com.google.code.gson:gson:$gsonVersion"
+    compile "com.caucho:hessian:$hessianVersion"
+    compile "com.esotericsoftware:kryo:$kryoVersion"
+    testCompile "junit:junit:$junitVersion"
+    testCompile "org.mock-server:mockserver-netty:$mockVersion"
+}

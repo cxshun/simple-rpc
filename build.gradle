@@ -1,0 +1,27 @@
+group 'com.shun.rpc'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    springVersion = "4.3.12.RELEASE"
+    nettyVersion = "4.1.16.Final"
+    zkVersion = "3.4.10"
+    junitVersion = "4.11"
+    log4jVersion = "2.9.1"
+    mockVersion = "3.12"
+    gsonVersion = "2.8.2"
+    slf4jVersion = "1.7.25"
+    hessianVersion = "4.0.51"
+    kryoVersion = "4.0.1"
+}
+
+dependencies {
+
+}
