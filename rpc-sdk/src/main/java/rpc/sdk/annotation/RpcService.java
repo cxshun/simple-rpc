@@ -12,7 +12,7 @@ import java.lang.annotation.*;
  */
 @Inherited
 @Target(ElementType.TYPE)
-@Retention(RetentionPolicy.CLASS)
+@Retention(RetentionPolicy.RUNTIME)
 @Component
 public @interface RpcService {
 }

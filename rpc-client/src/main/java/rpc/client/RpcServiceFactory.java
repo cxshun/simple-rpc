@@ -9,9 +9,11 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import org.springframework.util.CollectionUtils;
+import rpc.sdk.annotation.RpcService;
 import rpc.sdk.decoder.MessageDecoder;
 import rpc.sdk.dto.RpcRequest;
 import rpc.sdk.encoder.MessageEncoder;
+import rpc.sdk.exception.ClassNotQualifiedException;
 import rpc.sdk.exception.NoAvailableNodeException;
 import rpc.sdk.loadbalance.ZkServerHandler;
 import rpc.sdk.protocol.Serialize;
@@ -40,7 +42,12 @@ public class RpcServiceFactory implements InvocationHandler{
     private static ThreadLocal<Class<?>> clazzLocal = new ThreadLocal<>();
 
     @SuppressWarnings("unchecked")
-    public static <T> T getClass(Class<?> clazz) {
+    public static <T> T getClass(Class<?> clazz) throws ClassNotQualifiedException {
+        if (!clazz.isAnnotationPresent(RpcService.class)) {
+            Logger.error("class must be annotated with RpcService");
+            throw new ClassNotQualifiedException("class must be annotation with RpcService");
+        }
+
         clazzLocal.set(clazz);
 
         RpcServiceFactory serviceFactory = new RpcServiceFactory();
