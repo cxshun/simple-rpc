@@ -15,6 +15,6 @@ public class ClassNotQualifiedException extends Exception{
 
     @Override
     public String getMessage() {
-        return super.getMessage();
+        return this.msg;
     }
 }

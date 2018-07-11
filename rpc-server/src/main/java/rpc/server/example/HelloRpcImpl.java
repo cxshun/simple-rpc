@@ -1,6 +1,6 @@
 package rpc.server.example;
 
-import rpc.sdk.annotation.RpcService;
+import org.springframework.stereotype.Component;
 
 /**
  * <br/>==========================
@@ -8,7 +8,7 @@ import rpc.sdk.annotation.RpcService;
  * @date 2017/11/28
  * <br/>==========================
  */
-@RpcService
+@Component
 public class HelloRpcImpl implements HelloRpc{
     @Override
     public void sayHello(String name) {
