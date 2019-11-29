@@ -2,7 +2,7 @@ package rpc.sdk.exception;
 
 /**
  * class is not qualified to be execute as rpc class
- * @author chenxs(chenxs @ xiaopeng.com)——车联网基础平台
+ * @author cxshun(cxshun@gmail.com)
  * 2018-07-10 15:41
  **/
 public class ClassNotQualifiedException extends Exception{
